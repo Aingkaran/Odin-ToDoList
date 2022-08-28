@@ -2,8 +2,10 @@
 import './style.css';
 import todoitem from './createtodo.js';
 import {project ,newproject} from './createproject';
+import HTMLManipulation from './HTMLDOM.js'
 
 
+HTMLManipulation
 
 
 let newtask = todoitem("Clean Room","Make sure you get everything", "3/2/2022","High")

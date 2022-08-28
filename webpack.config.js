@@ -9,12 +9,17 @@ module.exports = {
       },
       plugins: [
         new HtmlWebpackPlugin({
-          title: 'Output Management',
-        }),
+          hash: true,
+          title: 'Aingkaran TODO APP',
+          template: './src/index.html',
+          filename: './dist/index.html' //relative to root of the application
+      })
       ],
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    clean: true,
+
   },
   mode:'development',
   devtool: 'inline-source-map',

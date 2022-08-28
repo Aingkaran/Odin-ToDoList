@@ -1,0 +1,138 @@
+.container {
+    padding-left: 1vw;
+    padding-right: 1vw;
+    display: flex;
+    flex-direction: column;
+}
+.menu-button{
+    font-size: 3vh;
+    margin-left: 3vw;
+    font-size: 5vh;
+}
+
+.title{
+    font-size: 5vh;
+    font-weight: bold;
+    display: flex;
+
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(194, 194, 194);
+    height: 8vh;
+    border-bottom: 5px solid rgb(36, 179, 79);
+
+
+}
+
+.do{
+    color: rgb(36, 179, 79);
+
+}
+
+.bottom{
+    display: flex;
+    
+}
+
+.bottom-left{
+    display: flex;
+    flex-direction: column;
+    width:15vw;
+    height: 100vh;
+    padding: 5vh;
+    border-right: 5px solid grey;
+    gap: 2vh;
+
+}
+
+.bottom-right{
+    display: flex;
+    flex-direction: column;
+    width:85vw;
+    height: 100vh;
+
+    background-color: rgb(194, 194, 194);
+    padding: 5vh;
+    
+}
+
+.project-title-container{
+    display: flex;
+    justify-content: start;
+    background-color: rgb(36, 179, 79);
+    height: 10vh;
+    align-items: center;
+    font-size: 5vh;
+    font-weight: bold;
+    border: 3px solid black;
+    border-radius: 20px;
+    color: white;
+
+}
+
+.project-title {
+    margin-left: 3vw;
+}
+
+.tasks-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 3vh;
+    gap: 1vh;
+}
+
+.task{
+    display:flex;
+
+    background-color: white;
+    height: 4vh;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    align-items: center;
+}
+
+.all-tasks{
+    height: 4vh;
+    font-size: 3vh;
+    font-weight: bold;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.projects{
+    height: 3vh;
+    font-size: 3vh;
+    font-weight: bold;
+    border-bottom: 3px solid black;
+}
+
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.projects-sidebar{
+    height: 3vh;
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.all-tasks:hover {
+    background-color: rgb(36, 179, 79);
+  }
+
+
+.projects-sidebar:hover{
+    background-color: rgb(36, 179, 79);
+
+}
