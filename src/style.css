@@ -84,17 +84,34 @@
     justify-content: start;
     margin-top: 3vh;
     gap: 1vh;
+    font-size: 3vh;
+}
+.add-task{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1vw;
 }
 
 .task{
     display:flex;
-
+    justify-content: space-between;
     background-color: white;
     height: 4vh;
     border: 3px solid black;
     border-radius: 20px;
     padding: 10px;
     align-items: center;
+}
+
+.task-left{
+    display:flex;
+    gap: 1vw;
+}
+
+.task-right{
+    display:flex;
+    gap: 1vw;
 }
 
 .all-tasks{
@@ -113,6 +130,10 @@
     font-size: 3vh;
     font-weight: bold;
     border-bottom: 3px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
 }
 
 .projects-container{
@@ -122,17 +143,29 @@
 }
 
 .projects-sidebar{
-    height: 3vh;
+    height: 4vh;
     font-size: 3vh;
     font-weight: bold;
+    padding: 2px;
 }
 
 .all-tasks:hover {
     background-color: rgb(36, 179, 79);
+    cursor: pointer;
   }
 
 
 .projects-sidebar:hover{
     background-color: rgb(36, 179, 79);
+    cursor: pointer;
 
+}
+
+.project-add{
+    cursor: pointer;
+
+}
+
+.task-priority{
+    color: red;
 }
