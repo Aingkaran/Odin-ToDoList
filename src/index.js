@@ -7,6 +7,22 @@ import HTMLManipulation from './HTMLDOM.js'
 
 HTMLManipulation
 
+const addtask= document.querySelector(".project-add2")
+
+const taskdetail= document.querySelector(".add-task-details")
+
+
+addtask.addEventListener('click', ()=>{
+
+  if (taskdetail.style.display === "none") {
+    taskdetail.style.display = "block";
+  } 
+  
+  else {
+    taskdetail.style.display = "none";
+  }
+})
+
 
 let newtask = todoitem("Clean Room","Make sure you get everything", "3/2/2022","High")
 let newtask2 = todoitem("Clean Room","Make sure you get everything", "3/2/2022","High")
