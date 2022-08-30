@@ -7,20 +7,19 @@ import HTMLManipulation from './HTMLDOM.js'
 
 HTMLManipulation
 
-const addtask= document.querySelector(".project-add2")
+const submitTask= document.querySelector(".submit-task")
 
-const taskdetail= document.querySelector(".add-task-details")
+const taskContainer= document.querySelector(".tasks-container")
+
+const node = document.querySelector(".task")
+
+const clone = node.cloneNode(true)
+
+node.remove()
 
 
-addtask.addEventListener('click', ()=>{
-
-  if (taskdetail.style.display === "none") {
-    taskdetail.style.display = "block";
-  } 
-  
-  else {
-    taskdetail.style.display = "none";
-  }
+submitTask.addEventListener('click', ()=>{
+    taskContainer.appendChild(clone)
 })
 
 
