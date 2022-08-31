@@ -2,25 +2,24 @@
 import './style.css';
 import todoitem from './createtodo.js';
 import {project ,newproject} from './createproject';
-import HTMLManipulation from './HTMLDOM.js'
+import {addTask, taskNumber} from './HTMLDOM.js'
 
 
-HTMLManipulation
+addTask()
+
+const titleInput= document.querySelector("#input-title")
+const dateInput= document.querySelector("#input-date")
+const priorityInput= document.querySelector("#input-priority")
+const descriptionInput= document.querySelector("#input-priority")
 
 const submitTask= document.querySelector(".submit-task")
-
-const taskContainer= document.querySelector(".tasks-container")
-
-const node = document.querySelector(".task")
-
-const clone = node.cloneNode(true)
-
-node.remove()
-
-
 submitTask.addEventListener('click', ()=>{
-    taskContainer.appendChild(clone)
+    
+
+
+
 })
+
 
 
 let newtask = todoitem("Clean Room","Make sure you get everything", "3/2/2022","High")
