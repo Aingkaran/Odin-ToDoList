@@ -10,13 +10,16 @@ addTask()
 const titleInput= document.querySelector("#input-title")
 const dateInput= document.querySelector("#input-date")
 const priorityInput= document.querySelector("#input-priority")
-const descriptionInput= document.querySelector("#input-priority")
+const descriptionInput= document.querySelector("#input-description")
 
 const submitTask= document.querySelector(".submit-task")
+
+
 submitTask.addEventListener('click', ()=>{
     
+    let newtaskconsole = todoitem(titleInput.value,descriptionInput.value, dateInput.value,priorityInput.value)
 
-
+    console.log(newtaskconsole.getdescription())
 
 })
 
