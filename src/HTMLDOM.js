@@ -12,6 +12,9 @@ const addTask=(()=>{
     const dateInput= document.querySelector("#input-date")
     const priorityInput= document.querySelector("#input-priority")
 
+
+
+
     node.remove()
 
 
@@ -42,6 +45,8 @@ const addTask=(()=>{
 
 
 })
+
+
 
 
 
