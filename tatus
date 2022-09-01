@@ -1,0 +1,53 @@
+[33mcommit a1267f64f80b372437be89805738ea152bf74cdf[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Aingkaran <aingkaran1995@gmail.com>
+Date:   Wed Aug 31 17:55:07 2022 -0400
+
+    store a new todoitem object test
+
+[33mcommit 8c60144d4dae43bc5b54faeaac12fd69ad4c7709[m
+Author: Aingkaran <aingkaran1995@gmail.com>
+Date:   Tue Aug 30 20:22:31 2022 -0400
+
+    Add DOM Manipulation for new tasks once submitted
+
+[33mcommit aab6ac52025fec7249406501638f9c7d46ece8c6[m
+Author: Aingkaran <aingkaran1995@gmail.com>
+Date:   Mon Aug 29 21:43:03 2022 -0400
+
+    Create clone function of task test
+
+[33mcommit b2ebcfbfbda6e2896e0695559e87f220e5ac2868[m
+Author: Aingkaran <aingkaran1995@gmail.com>
+Date:   Mon Aug 29 17:36:13 2022 -0400
+
+    Begin to add logic for adding tasks
+
+[33mcommit ff6bef3be973202d97bde2495d51c28fa2b86975[m
+Author: Aingkaran <aingkaran1995@gmail.com>
+Date:   Sun Aug 28 19:14:12 2022 -0400
+
+    Add additional HTML/CSS
+
+[33mcommit ae881193b1fd22fe2799088167543f916f141a67[m
+Author: Aingkaran <aingkaran1995@gmail.com>
+Date:   Sun Aug 28 18:01:27 2022 -0400
+
+    Add base styling CSS/HTML
+
+[33mcommit 9a15d570e49f445ae8ad9a659df666d0e956ad5e[m
+Author: Aingkaran <aingkaran1995@gmail.com>
+Date:   Sat Aug 27 17:43:15 2022 -0400
+
+    Create project and new task modules
+
+[33mcommit 4c56d372358607b80e1d41385ff04905b9c3c2d8[m
+Author: Aingkaran <aingkaran1995@gmail.com>
+Date:   Fri Aug 26 21:55:07 2022 -0400
+
+    setup webpack and files
+
+[33mcommit 2c30e4e4d3b0580910270617276b2dbc42b7144d[m
+Author: Aingkaran <66233482+Aingkaran@users.noreply.github.com>
+Date:   Fri Aug 26 17:05:08 2022 -0400
+
+    Initial commit

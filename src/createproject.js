@@ -8,14 +8,16 @@ const project =(()=>{
 })()
 
 
-const newproject=(projectTitle,tasks)=>{
+const newproject=(projectTitle,tasks,taskNumber)=>{
 
     let getprojecTitle=()=> projectTitle;
 
     let getprojectTasks=()=> tasks
+    
+    let getprojecttaskNumber=()=> taskNumber
 
 
-return {getprojecTitle,getprojectTasks}
+return {getprojecTitle,getprojectTasks,getprojecttaskNumber}
 }
 
 
