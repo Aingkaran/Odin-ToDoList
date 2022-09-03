@@ -8,6 +8,17 @@ import { forEach } from 'lodash';
 
 addTask()
 
+
+
+
+
+
+    
+    
+    
+    
+    
+
 const titleInput= document.querySelector("#input-title")
 const dateInput= document.querySelector("#input-date")
 const priorityInput= document.querySelector("#input-priority")
@@ -29,21 +40,34 @@ projectSelect.forEach((projectName)=>{
 })
 
 
+const allTasks= document.querySelector(".all-tasks")
 
-submitTask.addEventListener('click', ()=>{
-    
-    let newtaskconsole = todoitem(titleInput.value,descriptionInput.value, dateInput.value,priorityInput.value)
+allTasks.addEventListener('click', ()=>{
+    projectTitle.textContent= allTasks.textContent
 
-    let newProject = newproject(projectTitle.textContent, newtaskconsole, taskNumber)
-    
-    project.projectlist.push(newProject)
-  
-    
 
-})
+    })
 
 
 
 
 
 
+
+
+
+
+let testaddtask = todoitem("Test TItle","test-description", "Test-date","Test Priority")
+
+let testaddproject = newproject(projectTitle.textContent, testaddtask, 1)
+
+project.projectlist.push(testaddproject)
+
+for (let i=0;i<project.projectlist.length;i++){
+
+    console.log(project.projectlist[i].getprojectTasks().gettitle())
+    console.log(project.projectlist[i].getprojectTasks().getdescription())
+    console.log(project.projectlist[i].getprojectTasks().getdueDate())
+    console.log(project.projectlist[i].getprojectTasks().getpriority())
+
+}
