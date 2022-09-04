@@ -26,15 +26,47 @@ const descriptionInput= document.querySelector("#input-description")
 
 const projectTitle= document.querySelector(".project-title")
 const projectSelect= document.querySelectorAll(".projects-sidebar")
+const taskContainer= document.querySelector(".tasks-container")
 
 
 const submitTask= document.querySelector(".submit-task")
+const node = document.querySelector(".task-template")
+
 
 projectSelect.forEach((projectName)=>{
 
     projectName.addEventListener('click', ()=>{
+
+        const taskDelete = document.querySelectorAll(".task")
+
+        taskDelete.forEach((removeTask)=>{
+
+            removeTask.remove()
+        })
+
         projectTitle.textContent= projectName.textContent
 
+        for (let i=0;i<project.projectlist.length;i++){
+            if(project.projectlist[i].getprojecTitle()== projectTitle.textContent ){
+                const clone = node.cloneNode(true)
+        
+                clone.setAttribute("value", project.projectlist[i].getprojecttaskNumber())
+                clone.setAttribute("class", "task")
+
+                const taskTitle =  clone.querySelector(".task-title")
+                const taskPriority =  clone.querySelector(".task-priority")
+                const taskDate =  clone.querySelector(".task-date")
+        
+                taskTitle.textContent= project.projectlist[i].getprojectTasks().gettitle()
+                taskPriority.textContent= project.projectlist[i].getprojectTasks().getpriority()
+                taskDate.textContent= project.projectlist[i].getprojectTasks().getdueDate()
+                
+                taskContainer.appendChild(clone)
+              
+            }
+
+        }
+        
 
         })
 })
@@ -57,11 +89,7 @@ allTasks.addEventListener('click', ()=>{
 
 
 
-let testaddtask = todoitem("Test TItle","test-description", "Test-date","Test Priority")
 
-let testaddproject = newproject(projectTitle.textContent, testaddtask, 1)
-
-project.projectlist.push(testaddproject)
 
 for (let i=0;i<project.projectlist.length;i++){
 

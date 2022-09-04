@@ -8,7 +8,7 @@ const addTask=(()=>{
 
     const taskContainer= document.querySelector(".tasks-container")
 
-    const node = document.querySelector(".task")
+    const node = document.querySelector(".task-template")
 
     const titleInput= document.querySelector("#input-title")
     const dateInput= document.querySelector("#input-date")
@@ -23,7 +23,6 @@ const addTask=(()=>{
 
 
 
-    node.remove()
 
 
     submitTask.addEventListener('click', ()=>{
@@ -34,8 +33,9 @@ const addTask=(()=>{
        
 
         clone.setAttribute("value", taskNumber)
+        clone.setAttribute("class", "task")
 
-        
+    
 
         const taskTitle =  clone.querySelector(".task-title")
         const taskPriority =  clone.querySelector(".task-priority")
@@ -52,9 +52,10 @@ const addTask=(()=>{
     
         project.projectlist.push(newProject)
 
-        console.log(project.projectlist[taskNumber].getprojectTasks().gettitle())    
+           
 
     })
+    
 
 
 })

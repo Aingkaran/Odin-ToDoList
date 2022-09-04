@@ -191,3 +191,8 @@
 .task-priority{
     color: red;
 }
+
+
+.task-template{
+    display: none;
+}
