@@ -196,3 +196,9 @@
 .task-template{
     display: none;
 }
+
+
+.delete{
+    cursor: pointer;
+
+}

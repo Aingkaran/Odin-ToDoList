@@ -2,6 +2,33 @@ import todoitem from './createtodo.js';
 import {project ,newproject} from './createproject';
 
 let taskNumber= 0
+
+const addProject=(()=>{
+    const submitProject= document.getElementById("input-project")
+    const projectContainer= document.querySelector(".projects-container")
+    const addProjectBtn =document.querySelector(".project-add1")
+
+    addProjectBtn.addEventListener('click', ()=>{
+        const projectName= document.createElement('div')
+        projectName.innerText = submitProject.value
+        projectName.setAttribute("class","projects-sidebar")
+
+        projectContainer.appendChild(projectName)
+
+
+    })
+
+
+})
+
+
+const deleteTask = (()=>{
+    
+
+
+
+})
+
 const addTask=(()=>{
    
     const submitTask= document.querySelector(".submit-task")
@@ -65,5 +92,5 @@ const addTask=(()=>{
 
 
 
-export {addTask, taskNumber}
+export {addTask, taskNumber, addProject, deleteTask}
 
