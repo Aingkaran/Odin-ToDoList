@@ -12,7 +12,7 @@ module.exports = {
           hash: true,
           title: 'Aingkaran TODO APP',
           template: './src/index.html',
-          filename: './dist/index.html' //relative to root of the application
+          filename: './index.html' //relative to root of the application
       })
       ],
   output: {
